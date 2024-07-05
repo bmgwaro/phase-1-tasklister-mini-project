@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("create-task-form").addEventListener("submit", ()=>{
     event.preventDefault();
     let listValues=document.getElementById("new-task-description").value;
-    document.getElementById("tasks").textContent=listValues
-    
+    tasks.append(listValues)
   })
-
 })
